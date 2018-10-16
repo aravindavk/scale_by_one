@@ -1,0 +1,230 @@
+== Summary
+----
+Initial number of nodes          : 3
+Max nodes added                  : 24(+21)
+Initial number of bricks per node: 8
+Max device size per node         : 100G
+Volume Type                      : Replica 3
+
+Volume Size=100G Growth=--    Utilization=100% Max size possible=100G Number of Nodes=3
+Volume Size=133G Growth=+33%  Utilization=100% Max size possible=133G Number of Nodes=4
+Volume Size=160G Growth=+20%  Utilization=96%  Max size possible=166G Number of Nodes=5
+Volume Size=200G Growth=+25%  Utilization=100% Max size possible=200G Number of Nodes=6
+Volume Size=216G Growth=+8%   Utilization=92%  Max size possible=233G Number of Nodes=7
+Volume Size=266G Growth=+23%  Utilization=100% Max size possible=266G Number of Nodes=8
+Volume Size=266G Growth=+0%   Utilization=88%  Max size possible=300G Number of Nodes=9
+Volume Size=316G Growth=+18%  Utilization=94%  Max size possible=333G Number of Nodes=10
+Volume Size=333G Growth=+5%   Utilization=90%  Max size possible=366G Number of Nodes=11
+Volume Size=400G Growth=+20%  Utilization=100% Max size possible=400G Number of Nodes=12
+Volume Size=400G Growth=+0%   Utilization=92%  Max size possible=433G Number of Nodes=13
+Volume Size=400G Growth=+0%   Utilization=85%  Max size possible=466G Number of Nodes=14
+Volume Size=450G Growth=+12%  Utilization=90%  Max size possible=500G Number of Nodes=15
+Volume Size=450G Growth=+0%   Utilization=84%  Max size possible=533G Number of Nodes=16
+Volume Size=450G Growth=+0%   Utilization=79%  Max size possible=566G Number of Nodes=17
+Volume Size=450G Growth=+0%   Utilization=75%  Max size possible=600G Number of Nodes=18
+Volume Size=450G Growth=+0%   Utilization=71%  Max size possible=633G Number of Nodes=19
+Volume Size=500G Growth=+11%  Utilization=75%  Max size possible=666G Number of Nodes=20
+Volume Size=600G Growth=+20%  Utilization=85%  Max size possible=700G Number of Nodes=21
+Volume Size=700G Growth=+16%  Utilization=95%  Max size possible=733G Number of Nodes=22
+Volume Size=700G Growth=+0%   Utilization=91%  Max size possible=766G Number of Nodes=23
+Volume Size=800G Growth=+14%  Utilization=100% Max size possible=800G Number of Nodes=24
+----
+
+== Details
+**Note**: Number prefix shown with brick name represents sub volume number. Bricks belonging to same sub volume should not exists in same node
+
+.**Volume Size=100G Growth=--    Utilization=100% Max size possible=100G Number of Nodes=3**
+----
+Node 1          Node 2          Node 3          
+---------------------------------------------
+1:brick1        1:brick2        1:brick3        
+2:brick4        2:brick5        2:brick6        
+3:brick7        3:brick8        3:brick9        
+4:brick10       4:brick11       4:brick12       
+5:brick13       5:brick14       5:brick15       
+6:brick16       6:brick17       6:brick18       
+7:brick19       7:brick20       7:brick21       
+8:brick22       8:brick23       8:brick24       
+----
+
+.**Volume Size=133G Growth=+33%  Utilization=100% Max size possible=133G Number of Nodes=4**
+----
+Node 1          Node 2          Node 3          Node 4          
+------------------------------------------------------------
+2:brick4        1:brick2        1:brick3        1:brick1        
+3:brick7        3:brick8        2:brick6        2:brick5        
+5:brick13       4:brick11       4:brick12       3:brick9        
+6:brick16       6:brick17       5:brick15       4:brick10       
+7:brick19       7:brick20       7:brick21       5:brick14       
+8:brick22       8:brick23       8:brick24       6:brick18       
+----
+
+.**Volume Size=160G Growth=+20%  Utilization=96%  Max size possible=166G Number of Nodes=5**
+----
+Node 1          Node 2          Node 3          Node 4          Node 5          
+---------------------------------------------------------------------------
+3:brick7        3:brick8        1:brick3        1:brick1        1:brick2        
+5:brick13       4:brick11       2:brick6        2:brick5        2:brick4        
+6:brick16       6:brick17       5:brick15       4:brick10       3:brick9        
+7:brick19       7:brick20       7:brick21       5:brick14       4:brick12       
+8:brick22       8:brick23       8:brick24       6:brick18                       
+----
+
+.**Volume Size=200G Growth=+25%  Utilization=100% Max size possible=200G Number of Nodes=6**
+----
+Node 1          Node 2          Node 3          Node 4          Node 5          Node 6          
+------------------------------------------------------------------------------------------
+5:brick13       3:brick8        2:brick6        1:brick1        1:brick2        1:brick3        
+6:brick16       6:brick17       5:brick15       4:brick10       2:brick4        2:brick5        
+7:brick19       7:brick20       7:brick21       5:brick14       3:brick9        3:brick7        
+8:brick22       8:brick23       8:brick24       6:brick18       4:brick12       4:brick11       
+----
+
+.**Volume Size=216G Growth=+8%   Utilization=92%  Max size possible=233G Number of Nodes=7**
+----
+Node 1          Node 2          Node 3          Node 4          Node 5          Node 6          Node 7          
+---------------------------------------------------------------------------------------------------------
+6:brick16       6:brick17       5:brick15       1:brick1        1:brick2        1:brick3        2:brick6        
+7:brick19       7:brick20       7:brick21       4:brick10       2:brick4        2:brick5        3:brick8        
+8:brick22       8:brick23       8:brick24       5:brick14       3:brick9        3:brick7        5:brick13       
+                                                6:brick18       4:brick12       4:brick11                       
+----
+
+.**Volume Size=266G Growth=+23%  Utilization=100% Max size possible=266G Number of Nodes=8**
+----
+Node 1          Node 2          Node 3          Node 4          Node 5          Node 6          Node 7          Node 8          
+------------------------------------------------------------------------------------------------------------------------
+6:brick16       6:brick17       5:brick15       4:brick10       1:brick2        1:brick3        2:brick6        1:brick1        
+7:brick19       7:brick20       7:brick21       5:brick14       3:brick9        2:brick5        3:brick8        2:brick4        
+8:brick22       8:brick23       8:brick24       6:brick18       4:brick12       4:brick11       5:brick13       3:brick7        
+----
+
+.**Volume Size=266G Growth=+0%   Utilization=88%  Max size possible=300G Number of Nodes=9**
+----
+Node 1          Node 2          Node 3          Node 4          Node 5          Node 6          Node 7          Node 8          Node 9          
+---------------------------------------------------------------------------------------------------------------------------------------
+7:brick19       6:brick17       5:brick15       4:brick10       1:brick2        1:brick3        2:brick6        1:brick1        6:brick16       
+8:brick22       8:brick23       7:brick21       5:brick14       3:brick9        2:brick5        3:brick8        2:brick4        7:brick20       
+                                8:brick24       6:brick18       4:brick12       4:brick11       5:brick13       3:brick7                        
+----
+
+.**Volume Size=316G Growth=+18%  Utilization=94%  Max size possible=333G Number of Nodes=10**
+----
+Node 1          Node 2          Node 3          Node 4          Node 5          Node 6          Node 7          Node 8          Node 9          Node 10         
+------------------------------------------------------------------------------------------------------------------------------------------------------
+7:brick19       6:brick17       7:brick21       5:brick14       1:brick2        1:brick3        2:brick6        1:brick1        6:brick16       4:brick10       
+8:brick22       8:brick23       8:brick24       6:brick18       3:brick9        2:brick5        3:brick8        2:brick4        7:brick20       5:brick15       
+                                                                4:brick12       4:brick11       5:brick13       3:brick7                                        
+----
+
+.**Volume Size=333G Growth=+5%   Utilization=90%  Max size possible=366G Number of Nodes=11**
+----
+Node 1          Node 2          Node 3          Node 4          Node 5          Node 6          Node 7          Node 8          Node 9          Node 10         Node 11         
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+7:brick19       6:brick17       7:brick21       5:brick14       3:brick9        1:brick3        2:brick6        1:brick1        6:brick16       4:brick10       1:brick2        
+8:brick22       8:brick23       8:brick24       6:brick18       4:brick12       4:brick11       3:brick8        2:brick4        7:brick20       5:brick15       2:brick5        
+                                                                                                5:brick13       3:brick7                                                        
+----
+
+.**Volume Size=400G Growth=+20%  Utilization=100% Max size possible=400G Number of Nodes=12**
+----
+Node 1          Node 2          Node 3          Node 4          Node 5          Node 6          Node 7          Node 8          Node 9          Node 10         Node 11         Node 12         
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+7:brick19       6:brick17       7:brick21       5:brick14       3:brick9        1:brick3        3:brick8        2:brick4        6:brick16       4:brick10       1:brick2        1:brick1        
+8:brick22       8:brick23       8:brick24       6:brick18       4:brick12       4:brick11       5:brick13       3:brick7        7:brick20       5:brick15       2:brick5        2:brick6        
+----
+
+.**Volume Size=400G Growth=+0%   Utilization=92%  Max size possible=433G Number of Nodes=13**
+----
+Node 1          Node 2          Node 3          Node 4          Node 5          Node 6          Node 7          Node 8          Node 9          Node 10         Node 11         Node 12         Node 13         
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+8:brick22       6:brick17       7:brick21       5:brick14       3:brick9        1:brick3        3:brick8        2:brick4        6:brick16       4:brick10       1:brick2        1:brick1        7:brick19       
+                8:brick23       8:brick24       6:brick18       4:brick12       4:brick11       5:brick13       3:brick7        7:brick20       5:brick15       2:brick5        2:brick6                        
+----
+
+.**Volume Size=400G Growth=+0%   Utilization=85%  Max size possible=466G Number of Nodes=14**
+----
+Node 1          Node 2          Node 3          Node 4          Node 5          Node 6          Node 7          Node 8          Node 9          Node 10         Node 11         Node 12         Node 13         Node 14         
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+8:brick22       8:brick23       7:brick21       5:brick14       3:brick9        1:brick3        3:brick8        2:brick4        6:brick16       4:brick10       1:brick2        1:brick1        7:brick19       6:brick17       
+                                8:brick24       6:brick18       4:brick12       4:brick11       5:brick13       3:brick7        7:brick20       5:brick15       2:brick5        2:brick6                                        
+----
+
+.**Volume Size=450G Growth=+12%  Utilization=90%  Max size possible=500G Number of Nodes=15**
+----
+Node 1          Node 2          Node 3          Node 4          Node 5          Node 6          Node 7          Node 8          Node 9          Node 10         Node 11         Node 12         Node 13         Node 14         Node 15         
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+8:brick22       8:brick23       8:brick24       5:brick14       3:brick9        1:brick3        3:brick8        2:brick4        6:brick16       4:brick10       1:brick2        1:brick1        7:brick19       6:brick17       7:brick21       
+                                                6:brick18       4:brick12       4:brick11       5:brick13       3:brick7        7:brick20       5:brick15       2:brick5        2:brick6                                                        
+----
+
+.**Volume Size=450G Growth=+0%   Utilization=84%  Max size possible=533G Number of Nodes=16**
+----
+Node 1          Node 2          Node 3          Node 4          Node 5          Node 6          Node 7          Node 8          Node 9          Node 10         Node 11         Node 12         Node 13         Node 14         Node 15         Node 16         
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+8:brick22       8:brick23       8:brick24       6:brick18       3:brick9        1:brick3        3:brick8        2:brick4        6:brick16       4:brick10       1:brick2        1:brick1        7:brick19       6:brick17       7:brick21       5:brick14       
+                                                                4:brick12       4:brick11       5:brick13       3:brick7        7:brick20       5:brick15       2:brick5        2:brick6                                                                        
+----
+
+.**Volume Size=450G Growth=+0%   Utilization=79%  Max size possible=566G Number of Nodes=17**
+----
+Node 1          Node 2          Node 3          Node 4          Node 5          Node 6          Node 7          Node 8          Node 9          Node 10         Node 11         Node 12         Node 13         Node 14         Node 15         Node 16         Node 17         
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+8:brick22       8:brick23       8:brick24       6:brick18       4:brick12       1:brick3        3:brick8        2:brick4        6:brick16       4:brick10       1:brick2        1:brick1        7:brick19       6:brick17       7:brick21       5:brick14       3:brick9        
+                                                                                4:brick11       5:brick13       3:brick7        7:brick20       5:brick15       2:brick5        2:brick6                                                                                        
+----
+
+.**Volume Size=450G Growth=+0%   Utilization=75%  Max size possible=600G Number of Nodes=18**
+----
+Node 1          Node 2          Node 3          Node 4          Node 5          Node 6          Node 7          Node 8          Node 9          Node 10         Node 11         Node 12         Node 13         Node 14         Node 15         Node 16         Node 17         Node 18         
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+8:brick22       8:brick23       8:brick24       6:brick18       4:brick12       4:brick11       3:brick8        2:brick4        6:brick16       4:brick10       1:brick2        1:brick1        7:brick19       6:brick17       7:brick21       5:brick14       3:brick9        1:brick3        
+                                                                                                5:brick13       3:brick7        7:brick20       5:brick15       2:brick5        2:brick6                                                                                                        
+----
+
+.**Volume Size=450G Growth=+0%   Utilization=71%  Max size possible=633G Number of Nodes=19**
+----
+Node 1          Node 2          Node 3          Node 4          Node 5          Node 6          Node 7          Node 8          Node 9          Node 10         Node 11         Node 12         Node 13         Node 14         Node 15         Node 16         Node 17         Node 18         Node 19         
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+8:brick22       8:brick23       8:brick24       6:brick18       4:brick12       4:brick11       5:brick13       2:brick4        6:brick16       4:brick10       1:brick2        1:brick1        7:brick19       6:brick17       7:brick21       5:brick14       3:brick9        1:brick3        3:brick8        
+                                                                                                                3:brick7        7:brick20       5:brick15       2:brick5        2:brick6                                                                                                                        
+----
+
+.**Volume Size=500G Growth=+11%  Utilization=75%  Max size possible=666G Number of Nodes=20**
+----
+Node 1          Node 2          Node 3          Node 4          Node 5          Node 6          Node 7          Node 8          Node 9          Node 10         Node 11         Node 12         Node 13         Node 14         Node 15         Node 16         Node 17         Node 18         Node 19         Node 20         
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+8:brick22       8:brick23       8:brick24       6:brick18       4:brick12       4:brick11       5:brick13       3:brick7        6:brick16       4:brick10       1:brick2        1:brick1        7:brick19       6:brick17       7:brick21       5:brick14       3:brick9        1:brick3        3:brick8        2:brick4        
+                                                                                                                                7:brick20       5:brick15       2:brick5        2:brick6                                                                                                                                        
+----
+
+.**Volume Size=600G Growth=+20%  Utilization=85%  Max size possible=700G Number of Nodes=21**
+----
+Node 1          Node 2          Node 3          Node 4          Node 5          Node 6          Node 7          Node 8          Node 9          Node 10         Node 11         Node 12         Node 13         Node 14         Node 15         Node 16         Node 17         Node 18         Node 19         Node 20         Node 21         
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+8:brick22       8:brick23       8:brick24       6:brick18       4:brick12       4:brick11       5:brick13       3:brick7        7:brick20       4:brick10       1:brick2        1:brick1        7:brick19       6:brick17       7:brick21       5:brick14       3:brick9        1:brick3        3:brick8        2:brick4        6:brick16       
+                                                                                                                                                5:brick15       2:brick5        2:brick6                                                                                                                                                        
+----
+
+.**Volume Size=700G Growth=+16%  Utilization=95%  Max size possible=733G Number of Nodes=22**
+----
+Node 1          Node 2          Node 3          Node 4          Node 5          Node 6          Node 7          Node 8          Node 9          Node 10         Node 11         Node 12         Node 13         Node 14         Node 15         Node 16         Node 17         Node 18         Node 19         Node 20         Node 21         Node 22         
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+8:brick22       8:brick23       8:brick24       6:brick18       4:brick12       4:brick11       5:brick13       3:brick7        7:brick20       5:brick15       1:brick2        1:brick1        7:brick19       6:brick17       7:brick21       5:brick14       3:brick9        1:brick3        3:brick8        2:brick4        6:brick16       4:brick10       
+                                                                                                                                                                2:brick5        2:brick6                                                                                                                                                                        
+----
+
+.**Volume Size=700G Growth=+0%   Utilization=91%  Max size possible=766G Number of Nodes=23**
+----
+Node 1          Node 2          Node 3          Node 4          Node 5          Node 6          Node 7          Node 8          Node 9          Node 10         Node 11         Node 12         Node 13         Node 14         Node 15         Node 16         Node 17         Node 18         Node 19         Node 20         Node 21         Node 22         Node 23         
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+8:brick22       8:brick23       8:brick24       6:brick18       4:brick12       4:brick11       5:brick13       3:brick7        7:brick20       5:brick15       2:brick5        1:brick1        7:brick19       6:brick17       7:brick21       5:brick14       3:brick9        1:brick3        3:brick8        2:brick4        6:brick16       4:brick10       1:brick2        
+                                                                                                                                                                                2:brick6                                                                                                                                                                                        
+----
+
+.**Volume Size=800G Growth=+14%  Utilization=100% Max size possible=800G Number of Nodes=24**
+----
+Node 1          Node 2          Node 3          Node 4          Node 5          Node 6          Node 7          Node 8          Node 9          Node 10         Node 11         Node 12         Node 13         Node 14         Node 15         Node 16         Node 17         Node 18         Node 19         Node 20         Node 21         Node 22         Node 23         Node 24         
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+8:brick22       8:brick23       8:brick24       6:brick18       4:brick12       4:brick11       5:brick13       3:brick7        7:brick20       5:brick15       2:brick5        2:brick6        7:brick19       6:brick17       7:brick21       5:brick14       3:brick9        1:brick3        3:brick8        2:brick4        6:brick16       4:brick10       1:brick2        1:brick1        
+----
